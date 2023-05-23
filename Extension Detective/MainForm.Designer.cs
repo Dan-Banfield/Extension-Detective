@@ -31,19 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.fileSelectionGroupBox = new System.Windows.Forms.GroupBox();
             this.chooseFilesButton = new System.Windows.Forms.Button();
-            this.selectedFilesLabel = new System.Windows.Forms.Label();
             this.outputTextBox = new System.Windows.Forms.TextBox();
             this.fileSelectionGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // fileSelectionGroupBox
             // 
-            this.fileSelectionGroupBox.Controls.Add(this.selectedFilesLabel);
             this.fileSelectionGroupBox.Controls.Add(this.chooseFilesButton);
             this.fileSelectionGroupBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileSelectionGroupBox.Location = new System.Drawing.Point(12, 12);
             this.fileSelectionGroupBox.Name = "fileSelectionGroupBox";
-            this.fileSelectionGroupBox.Size = new System.Drawing.Size(660, 131);
+            this.fileSelectionGroupBox.Size = new System.Drawing.Size(660, 110);
             this.fileSelectionGroupBox.TabIndex = 0;
             this.fileSelectionGroupBox.TabStop = false;
             this.fileSelectionGroupBox.Text = "File Selection";
@@ -60,24 +58,15 @@
             this.chooseFilesButton.UseVisualStyleBackColor = true;
             this.chooseFilesButton.Click += new System.EventHandler(this.chooseFilesButton_Click);
             // 
-            // selectedFilesLabel
-            // 
-            this.selectedFilesLabel.AutoSize = true;
-            this.selectedFilesLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedFilesLabel.Location = new System.Drawing.Point(21, 93);
-            this.selectedFilesLabel.Name = "selectedFilesLabel";
-            this.selectedFilesLabel.Size = new System.Drawing.Size(114, 20);
-            this.selectedFilesLabel.TabIndex = 1;
-            this.selectedFilesLabel.Text = "Selected Files: 0";
-            // 
             // outputTextBox
             // 
             this.outputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputTextBox.Location = new System.Drawing.Point(12, 149);
+            this.outputTextBox.Location = new System.Drawing.Point(12, 128);
             this.outputTextBox.Multiline = true;
             this.outputTextBox.Name = "outputTextBox";
             this.outputTextBox.ReadOnly = true;
-            this.outputTextBox.Size = new System.Drawing.Size(660, 208);
+            this.outputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.outputTextBox.Size = new System.Drawing.Size(660, 229);
             this.outputTextBox.TabIndex = 1;
             this.outputTextBox.TabStop = false;
             this.outputTextBox.Text = "Waiting for tasks to perform...";
@@ -98,7 +87,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Extension Detective";
             this.fileSelectionGroupBox.ResumeLayout(false);
-            this.fileSelectionGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +96,6 @@
 
         private System.Windows.Forms.GroupBox fileSelectionGroupBox;
         private System.Windows.Forms.Button chooseFilesButton;
-        private System.Windows.Forms.Label selectedFilesLabel;
         private System.Windows.Forms.TextBox outputTextBox;
     }
 }
