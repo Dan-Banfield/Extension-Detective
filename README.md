@@ -7,3 +7,5 @@ Extension Detective enables you to effortlessly correct file extensions, whether
 ![Extension Detective logo](https://github.com/Dan-Banfield/Extension-Detective/blob/master/Images/Screenshot01.png?raw=true "Extension Detective logo")
 
 ## Installation
+
+You can install the latest release of the application [here](https://github.com/Dan-Banfield/Extension-Detective/releases/latest).
