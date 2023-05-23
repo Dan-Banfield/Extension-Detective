@@ -85,7 +85,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Extension Detective";
+            this.Text = "Extension Detective - v1.0";
             this.fileSelectionGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
