@@ -1,5 +1,4 @@
 ﻿using TrID;
-using System;
 using System.IO;
 using System.Windows.Forms;
 using Ookii.Dialogs.WinForms;
@@ -64,15 +63,15 @@ namespace Extension_Detective
 
                         File.Copy(file, $@"{outputFolder}\{fileName}{correctExtension.ToLower()}");
                     });
-                    outputTextBox.Text += $"Successfully corrected extension for file: {fileName}{Environment.NewLine}";
+                    statusLabel.Text = $"Successfully corrected extension for file: {fileName}";
                 }
                 catch
                 {
-                    outputTextBox.Text += $"Failed to correct extension for file: {fileName}{Environment.NewLine}";
+                    statusLabel.Text = $"Failed to correct extension for file: {fileName}";
                     continue;
                 }
             }
-            outputTextBox.Text += $"{Environment.NewLine}Done!";
+            statusLabel.Text = "Waiting...";
             SetControlsState(false);
         }
 
@@ -82,10 +81,11 @@ namespace Extension_Detective
             {
                 case true:
                     chooseFilesButton.Enabled = false;
-                    outputTextBox.Text = "";
                     break;
                 case false:
                     chooseFilesButton.Enabled = true;
+                    statusLabel.Text = "Waiting...";
+                    MessageBox.Show("Correction finished successfully.", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
             }
         }
