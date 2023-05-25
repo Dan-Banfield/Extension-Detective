@@ -62,7 +62,7 @@
             this.netSealTheme.SmartBounds = true;
             this.netSealTheme.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.netSealTheme.TabIndex = 0;
-            this.netSealTheme.Text = "Extension Detective - v1.0";
+            this.netSealTheme.Text = "Extension Detective - v1.1";
             this.netSealTheme.TransparencyKey = System.Drawing.Color.Empty;
             this.netSealTheme.Transparent = false;
             // 
@@ -134,7 +134,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Extension Detective - v1.0";
+            this.Text = "Extension Detective";
             this.netSealTheme.ResumeLayout(false);
             this.netSealTheme.PerformLayout();
             this.fileSelectionGroupBox.ResumeLayout(false);
